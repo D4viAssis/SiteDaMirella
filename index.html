@@ -1,0 +1,188 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortalPipoca</title>
+
+    <!-- Link para uma fonte mais formal (Merriweather do Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        header {
+            font-family: 'Merriweather', serif;
+            font-size: 3em;
+            position: absolute;
+            top: 20px;
+            left: 10px;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            text-shadow: 
+                1px 1px 2px #000, 
+                -1px -1px 2px #000;
+        }
+
+        .play-triangle {
+            width: 0;
+            height: 0;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            border-left: 30px solid #FFFFFF;
+            margin-left: 10px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            background-color: #42142e; /* Cor de fundo alterada */
+            color: #fff;
+            padding-top: 120px;
+            align-items: center;
+        }
+
+        .main-video {
+            width: 90%;
+            max-width: 480px; /* Dimensão reduzida */
+            height: 270px; /* Proporção mantida */
+            object-fit: cover;
+            margin: 20px 0;
+            border-radius: 15px; /* Borda arredondada */
+            overflow: hidden;
+            transition: transform 0.3s ease; /* Transição suave */
+            border: 5px solid #fff; /* Borda branca */
+        }
+
+        .main-video:hover {
+            transform: scale(1.1); /* Aumenta o vídeo 10% ao passar o mouse */
+        }
+
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            width: 90%; /* Reduz a largura geral */
+            max-width: 1000px;
+            margin-bottom: 40px;
+        }
+
+        .video-container iframe {
+            width: 40%; /* Largura reduzida para dois vídeos por linha */
+            height: 200px; /* Altura ajustada */
+            object-fit: cover;
+            margin-bottom: 20px;
+            border-radius: 10px; /* Borda arredondada */
+            overflow: hidden;
+            transition: transform 0.3s ease; /* Transição suave */
+            border: 5px solid #fff; /* Borda branca */
+        }
+
+        .video-container iframe:hover {
+            transform: scale(1.1); /* Aumenta o vídeo 10% ao passar o mouse */
+        }
+
+        .comments {
+            margin-top: 40px;
+            font-family: 'Merriweather', serif;
+            width: 90%;
+            max-width: 1000px;
+            background-color: #532c45;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .comment {
+            background-color: #42142e;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+
+        .comment span {
+            font-weight: bold;
+        }
+
+        .comments-title {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .hosting-info {
+            font-size: 1.2em;
+            color: #fff;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        PortalPipoca - Trailers, resenhas, e muito mais!
+        <div class="play-triangle"></div>
+    </header>
+
+    <!-- Mensagem sobre a hospedagem -->
+    <p class="hosting-info">Esse site foi hospedado na conta do github do Davi, pois a conta da Mirella está indisponível no momento.</p>
+
+    <!-- Exibe o vídeo principal abaixo do título -->
+    <iframe class="main-video" src="https://www.youtube.com/embed/gh1sZEvdBJg" title="YouTube video player" allowfullscreen></iframe>
+
+    <!-- Filmes organizados em linhas com 2 filmes cada -->
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/-AiTbAu2mz8" title="YouTube video player" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/EucUYVS1kPM" title="YouTube video player" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/E7_4ZUpyoWM" title="YouTube video player" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/Jg-ls07nixc" title="YouTube video player" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/_2T-d5ZM6-Q" title="YouTube video player" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/9Y8N7tsA9rA" title="YouTube video player" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/-hWlIC1gvPE" title="YouTube video player" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/PXP4Cv1Q7Y0" title="YouTube video player" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/XpZterwuuc4" title="YouTube video player" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/seSIJf5mhPE" title="YouTube video player" allowfullscreen></iframe>
+    </div>
+
+    <!-- Comentários -->
+    <div class="comments">
+        <p class="comments-title">Comentários:</p>
+        <div class="comment">
+            <span>Kauê comentou:</span> Achei muitos filmes que eu não conhecia, nota 10!
+        </div>
+        <div class="comment">
+            <span>Arthur comentou:</span> Muito bom, muita diversidade.
+        </div>
+        <div class="comment">
+            <span>Rafael comentou:</span> As críticas me ajudaram á decidir qual filme escolher, obrigado!
+        </div>
+        <div class="comment">
+            <span>Ana comentou:</span> Só filme de qualidade, parabéns!
+        </div>
+        <div class="comment">
+            <span>Yan comentou:</span> Não gostei
+        </div>
+        <div class="comment">
+            <span>Roberto comentou:</span> Belos trailers
+        </div>
+        <div class="comment">
+            <span>Davi comentou:</span> Gostei demais!
+        </div>
+    </div>
+
+</body>
+</html>
